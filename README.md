@@ -3,12 +3,15 @@
 ## General info (during the work process)
 Please add and adjust the info if something's not correct
 
-### Styles
+### Styles 
+#### General
 - Only style classes (not ids or tags)
 - Max-with on page: 130rem
 - Full page width margins: XX%
 - Color code: HEX (example #000000)
 - Size unit: REM, percent
+
+#### Specific 
 - Font, paragraph
   - font-style:
   - font-family: 'Open Sans Condensed', sans-serif;
