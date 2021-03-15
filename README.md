@@ -5,9 +5,9 @@ This is a group project and here we're gonna input some general info about it
 
 ### Styles
 - Max-with on page: 1300px
-- Full page width margins: XX px or %
+- Full page width margins: XX REM or %
 - Color code: HEX (example #000000)
-- Size unit: pixels and percent
+- Size unit: REM, percent
 - Font, paragraph
   - font-style:
   - font-family: 'Open Sans Condensed', sans-serif;
