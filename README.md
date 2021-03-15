@@ -4,8 +4,8 @@
 Please add and adjust the info if something's not correct
 
 ### Styles
-- Max-with on page: 1300px
-- Full page width margins: XX REM or %
+- Max-with on page: 130rem
+- Full page width margins: XX%
 - Color code: HEX (example #000000)
 - Size unit: REM, percent
 - Font, paragraph
