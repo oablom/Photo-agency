@@ -1,7 +1,7 @@
 # Photo-agency ReadMe
 
-## General info
-This is a group project and here we're gonna input some general info about it
+## General info (during the work process)
+Please add and adjust the info if something's not correct
 
 ### Styles
 - Max-with on page: 1300px
