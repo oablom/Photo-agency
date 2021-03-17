@@ -1,83 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <title>Contact page</title>
-</head>
-<body>
-   
-    
-    <section class="contact">
-        <div class="content">
-            <h2>Contact us</h2>
-            <p>You can contact our support/booking calling the number +46 702 313 131,
-                active from Monday to Friday from 9 A.M. to 6 P.M. CET (available only
-                from European countries). Otherwise, you can fill the form below, and we
-                will answer as soon as possible.</p>
-        </div>
-        <div class="container">
-            <div class="contactInfo">
-                <div class="box">
-                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                    <div class="text">
-                        <h3>Address</h3>
-                        <p>Skolgatan 1, Helsingborg, Sverige</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"> <i class="fa fa-phone" aria-hidden="true"></i></div>
-                    <div class="text">
-                        <h3>Phone</h3>
-                        <p>+46 702 313 131</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"> <i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-                    
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p>photoagency@hotmail.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contactForm">
-                <form>
-                    <h2>Send Message</h2>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Full name</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Email</span>
-                    </div>
-                    <div class="inputBox">
-                       <textarea required="required"></textarea>
-                        <span>Type your Message...</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="Submit" name="" value="Send">
-                    </div>
-                </form>
-            </div>   
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We at Photo Agency help mediate between the photographers who own the copyright to their photos and want to license them for money and the designers and creatives who need professional photos quick and to a affordable price."
+    />
+    <meta
+      property="og:description"
+      content="We at Photo Agency help mediate between the photographers who own the copyright to their photos and want to license them for money and the designers and creatives who need professional photos quick and to a affordable price."
+    />
+    <meta
+      property="twitter:description"
+      content="We at Photo Agency help mediate between the photographers who own the copyright to their photos and want to license them for money and the designers and creatives who need professional photos quick and to a affordable price."
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
 
+    <!-- TODO: correct file path to stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="../assets/images/landing-img/favicon-32x32.png" />
+    <title>Photo Agency</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="header">
+      <div class="logo">Photo Agency</div>
+      <!-- Nav toggler -->
+      <div class="menu-toggle" id="jsNavbarToggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+      <!-- Nav links -->
+      <nav class="nav">
+        <ul class="nav__list" id="jsMenu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__links">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__links">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__links">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Navigation -->
+
+    <h2>Contact page</h2>
+    <p>
+      navigation partial sass file (_nav) is linked to assets/sass/contact.scss
+      file but not rendered since sass --watch was not initiated. File path to
+      other html file has been corrected and tested. Is rendering without
+      errors. Normalize.css is linked to "head".
+    </p>
+
+    <section class="contact">
+      <div class="content">
+        <h2>Contact us</h2>
+        <p>
+          You can contact our support/booking calling the number +46 702 313
+          131, active from Monday to Friday from 9 A.M. to 6 P.M. CET (available
+          only from European countries). Otherwise, you can fill the form below,
+          and we will answer as soon as possible.
+        </p>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>Skolgatan 1, Helsingborg, Sverige</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+46 702 313 131</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>
+
+            <div class="text">
+              <h3>Email</h3>
+              <p>photoagency@hotmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form>
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Full name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Type your Message...</span>
+            </div>
+            <div class="inputBox">
+              <input type="Submit" name="" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-</body>
+    <!-- Javascript file to toggle mobile navigation menu -->
+    <script src="../assets/script/landing.js"></script>
+  </body>
 </html>
