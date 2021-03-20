@@ -1,0 +1,27 @@
+@import "color";
+@import "mixin";
+
+.heading__h1 {
+  @include text;
+  font-size: 3rem;
+}
+
+.heading__h2 {
+  @include text;
+  font-size: 2.5rem;
+}
+
+.heading__h3 {
+  @include text;
+  font-size: 2rem;
+}
+
+.heading__h4 {
+  @include text;
+  font-size: 1.8rem;
+}
+
+.paragraph {
+  @include text;
+  font-size: 1.6rem;
+}

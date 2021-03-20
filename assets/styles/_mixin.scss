@@ -1,0 +1,6 @@
+@import "color";
+
+@mixin text {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: $text-white;
+}
