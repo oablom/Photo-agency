@@ -2,17 +2,17 @@
 @import "mixin";
 
 .heading__h1 {
-  @include text;
+  @include text-white;
   font-size: 3rem;
 }
 
 .heading__h2 {
-  @include text;
+  @include text-white;
   font-size: 2.5rem;
 }
 
 .heading__h3 {
-  @include text;
+  @include text-white;
   font-size: 2rem;
 }
 

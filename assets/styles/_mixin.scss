@@ -1,6 +1,13 @@
 @import "color";
 
-@mixin text {
+@mixin text-white {
   font-family: "Open Sans Condensed", sans-serif;
   color: $text-white;
+  font-weight: 300;
+}
+
+@mixin text-black {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: $text-black;
+  font-weight: 300;
 }
