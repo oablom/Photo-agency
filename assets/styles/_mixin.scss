@@ -11,10 +11,3 @@
   color: $text-black;
   font-weight: 300;
 }
-
-@mixin flex-center($val) {
-  display: flex;
-  flex-direction: $val;
-  justify-content: center;
-  align-items: center;
-}
