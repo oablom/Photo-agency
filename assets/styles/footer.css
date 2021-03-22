@@ -1,0 +1,65 @@
+.heading__h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.heading__h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.heading__h3 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.heading__h4 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.paragraph {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 10rem;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer__social--list {
+  color: #fff;
+}
+.footer__social--items {
+  color: #fff;
+}
+.footer__social--icons {
+  color: #fff;
+}
+
+/*# sourceMappingURL=footer.css.map */
