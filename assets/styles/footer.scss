@@ -49,6 +49,10 @@
   }
 }
 
+.fab:hover {
+  @include icon-hover;
+}
+
 .copy {
   display: flex;
   flex-wrap: wrap;

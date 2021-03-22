@@ -11,3 +11,10 @@
   color: $text-black;
   font-weight: 300;
 }
+
+// social links hoover mixin
+@mixin icon-hover {
+  color: $blue;
+  transform: scale(1.3);
+  transition: 0.2s ease-in-out;
+}
