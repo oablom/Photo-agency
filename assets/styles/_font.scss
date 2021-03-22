@@ -21,6 +21,16 @@
   font-size: 1.8rem;
 }
 
+.heading__h5 {
+  @include text-white;
+  font-size: 1.6rem;
+}
+
+.heading__h6 {
+  @include text-white;
+  font-size: 1.2rem;
+}
+
 .paragraph {
   @include text-white;
   font-size: 1.6rem;

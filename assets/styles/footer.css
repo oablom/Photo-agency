@@ -26,6 +26,20 @@
   font-size: 1.8rem;
 }
 
+.heading__h5 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.heading__h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
 .paragraph {
   font-family: "Open Sans Condensed", sans-serif;
   color: #fff;
@@ -35,31 +49,65 @@
 
 .footer {
   width: 100%;
+  margin: auto;
   height: auto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.footer__address {
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.25rem;
 }
 .footer__box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin: auto;
   width: 90%;
-  height: 10rem;
+  height: auto;
 }
 .footer__social {
+  width: 100%;
+  max-width: 80rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 1rem;
 }
 .footer__social--list {
-  color: #fff;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.footer__social--items {
+.footer__social--items a {
   color: #fff;
+  font-size: 1.4rem;
 }
 .footer__social--icons {
   color: #fff;
+}
+
+.copy {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.copy__text {
+  color: #fff;
+}
+.copy__attribute a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=footer.css.map */
