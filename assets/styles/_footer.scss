@@ -10,6 +10,24 @@
   align-items: center;
   &__box {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 90%;
+    height: 10rem;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &--list {
+      color: $text-white;
+    }
+    &--items {
+      color: $text-white;
+    }
+    &--icons {
+      color: $text-white;
+    }
   }
 }
