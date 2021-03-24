@@ -10,10 +10,21 @@
     background: url("../../images/landing-img/lens-2.png") no-repeat center;
     background-size: cover;
     opacity: 0.1;
-    width: 80rem;
-    height: 80rem;
+    width: 100rem;
+    height: 100rem;
     position: absolute;
-    top: -6%;
-    left: -5%;
+    top: -10%;
+    left: -10%;
+  }
+
+  &__lenses3 {
+    background: url("../../images/landing-img/lens-3.png") no-repeat center;
+    background-size: cover;
+    opacity: 0.1;
+    width: 90rem;
+    height: 90rem;
+    position: absolute;
+    bottom: -8%;
+    right: -6%;
   }
 }
