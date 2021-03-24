@@ -4,3 +4,16 @@
 @import "../nav";
 @import "../footer";
 @import "landing-breakpoints";
+
+.wrapper {
+  &__lenses2 {
+    background: url("../../images/landing-img/lens-2.png") no-repeat center;
+    background-size: cover;
+    opacity: 0.1;
+    width: 80rem;
+    height: 80rem;
+    position: absolute;
+    top: -6%;
+    left: -5%;
+  }
+}
