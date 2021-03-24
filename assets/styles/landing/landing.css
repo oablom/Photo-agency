@@ -397,30 +397,66 @@ body {
   right: -12%;
 }
 
-.main {
+.main__title {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
 }
 .main__title--h1 {
-  position: relative;
   text-align: center;
   font-family: "Open Sans Condensed", sans-serif;
   color: #fff;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 3.4rem;
 }
 
-.underline {
+.h1 {
+  position: relative;
+  width: 30rem;
+  margin: auto;
+}
+.h1__underline {
   width: 12rem;
   height: 0.2rem;
   background-color: #fff;
   position: absolute;
-  top: 4rem;
-  left: 5rem;
+  top: 6.12rem;
+  left: 3.2rem;
 }
 
+@media screen and (min-width: 600px) {
+  .wrapper {
+    width: 70vw;
+    height: 80vh;
+  }
+
+  .main__title--h1 {
+    font-size: 4rem;
+  }
+  .main paragraph--h5 {
+    font-size: 2.2rem;
+  }
+
+  .h1__underline {
+    width: 16rem;
+    height: 0.3rem;
+    top: 7.3rem;
+    left: 0;
+  }
+}
+@media screen and (min-width: 780px) {
+  .main__title--h1 {
+    font-size: 6rem;
+  }
+
+  .h1__underline {
+    width: 18rem;
+    height: 0.3rem;
+    top: 11rem;
+    left: -2rem;
+  }
+}
 @media screen and (min-width: 1160px) {
   .wrapper__lenses2 {
     width: 60vw;
@@ -437,6 +473,21 @@ body {
 
   .main__title--h1 {
     font-size: 8rem;
+  }
+  .main__paragraph--h5 {
+    width: 50rem;
+  }
+
+  .h1 {
+    width: 50rem;
+    align-self: flex-start;
+    margin: 0;
+  }
+  .h1__underline {
+    width: 26rem;
+    height: 0.38rem;
+    top: 15rem;
+    left: 0;
   }
 }
 
