@@ -26,6 +26,20 @@
   font-size: 1.8rem;
 }
 
+.heading__h5 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.heading__h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
 .paragraph {
   font-family: "Open Sans Condensed", sans-serif;
   color: #fff;
@@ -76,8 +90,10 @@ body {
   background-color: rgba(47, 44, 44, 0.4);
   padding: 1em;
   border-radius: 1rem;
-  animation-duration: 1.2s;
-  animation-name: bounceIn;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn;
 }
 
 .active {
@@ -123,6 +139,19 @@ body {
 }
 
 /* Animation */
+@-webkit-keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes bounceIn {
   0% {
     transform: scale(0.1);
@@ -167,7 +196,8 @@ body {
     justify-content: flex-end;
     list-style-type: none;
     background-color: transparent;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
   }
 
   .nav__item + .nav__item {
@@ -178,6 +208,4 @@ body {
   .nav__item a {
     text-decoration: none;
   }
-}
-
-/*# sourceMappingURL=nav.css.map */
+}/*# sourceMappingURL=nav.css.map */

@@ -1,1 +1,66 @@
 @import "../nav";
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+ width: 1027px;
+ font-size: 16px;
+ text-align: center;
+ font-family: 'Open Sans', sans-serif;
+ color: white;
+ line-height: 22px;
+}
+
+
+    .container-alex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1071px;
+        height: 216px;
+
+        .alex-img {
+            max-width: 186px;
+            max-height: 216px;
+        }
+
+        .alex-text {
+            width: 860px;
+        }
+        
+    }
+
+    .container-chris {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1071px;
+        height: 216px;
+
+        .chris-img {
+            width: 255px;
+            height: 216px;
+        }
+
+        .chris-text {
+            width: 800px;
+        }
+        
+    }
+
+    .container-mollie {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1071px;
+        height: 216px;
+
+        .mollie-img {
+            max-width: 186px;
+            max-height: 216px;
+        }
+        
+    }
