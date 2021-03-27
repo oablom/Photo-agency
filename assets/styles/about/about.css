@@ -215,7 +215,9 @@ main {
 }
 
 .about-container {
-  width: 1027px;
+  transform: translateY(50px);
+  max-width: 1027px;
+  width: 100%;
   font-size: 16px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -223,44 +225,47 @@ main {
 }
 
 .container-alex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1071px;
+  max-width: 1071px;
+  width: 100%;
   height: 216px;
 }
 .container-alex .alex-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1071px;
+  max-width: 1071px;
+  width: 100%;
   height: 216px;
   text-decoration: none;
   color: white;
   position: absolute;
 }
 .container-alex .alex-img {
-  max-width: 186px;
+  max-width: 169px;
   max-height: 216px;
 }
 .container-alex .alex-text {
-  width: 860px;
+  max-width: 800px;
+  width: 100%;
 }
 
 .container-alex:hover .alex-img, .container-alex:hover .alex-text {
   transform: scale(1.05);
   cursor: pointer;
+  width: 840px;
 }
 
 .container-chris {
-  width: 1071px;
+  max-width: 1071px;
+  width: 100%;
   height: 216px;
 }
 .container-chris .chris-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1071px;
+  max-width: 1071px;
+  width: 100%;
   height: 216px;
   text-decoration: none;
   color: white;
@@ -271,7 +276,8 @@ main {
   height: 216px;
 }
 .container-chris .chris-text {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
 }
 
 .container-chris:hover .chris-img, .container-chris:hover .chris-text {
@@ -281,15 +287,16 @@ main {
 }
 
 .container-mollie {
-  width: 1071px;
+  max-width: 1071px;
+  width: 100%;
   height: 216px;
-  text-decoration: none;
 }
 .container-mollie .mollie-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1071px;
+  max-width: 1071px;
+  width: 100%;
   height: 216px;
   text-decoration: none;
   color: white;
@@ -300,11 +307,43 @@ main {
   max-height: 216px;
 }
 .container-mollie .mollie-text {
-  width: 860px;
+  max-width: 860px;
+  width: 100%;
 }
 
 .container-mollie:hover .mollie-img, .container-mollie:hover .mollie-text {
   transform: scale(1.05);
   cursor: pointer;
   width: 840px;
+}
+
+@media (orientation: portrait) {
+  .about-container {
+    transform: translateY(50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-mollie, .container-alex, .container-chris {
+    max-width: 666px;
+    width: 100%;
+    height: 398px;
+    margin-bottom: 100px;
+  }
+  .container-mollie .mollie-link, .container-mollie .alex-link, .container-mollie .chris-link, .container-alex .mollie-link, .container-alex .alex-link, .container-alex .chris-link, .container-chris .mollie-link, .container-chris .alex-link, .container-chris .chris-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 666px;
+    width: 100%;
+    height: 398px;
+  }
+  .container-mollie .chris-link, .container-alex .chris-link, .container-chris .chris-link {
+    flex-direction: column-reverse;
+  }
+  .container-mollie .mollie-text, .container-mollie .alex-text, .container-mollie .chris-text, .container-alex .mollie-text, .container-alex .alex-text, .container-alex .chris-text, .container-chris .mollie-text, .container-chris .alex-text, .container-chris .chris-text {
+    height: 100px;
+  }
 }/*# sourceMappingURL=about.css.map */
