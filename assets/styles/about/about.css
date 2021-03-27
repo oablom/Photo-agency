@@ -219,7 +219,6 @@ main {
   font-size: 16px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  color: white;
   line-height: 22px;
 }
 
@@ -230,6 +229,16 @@ main {
   width: 1071px;
   height: 216px;
 }
+.container-alex .alex-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1071px;
+  height: 216px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+}
 .container-alex .alex-img {
   max-width: 186px;
   max-height: 216px;
@@ -238,29 +247,64 @@ main {
   width: 860px;
 }
 
+.container-alex:hover .alex-img, .container-alex:hover .alex-text {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .container-chris {
+  width: 1071px;
+  height: 216px;
+}
+.container-chris .chris-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1071px;
   height: 216px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
 }
 .container-chris .chris-img {
-  width: 255px;
+  max-width: 255px;
   height: 216px;
 }
 .container-chris .chris-text {
   width: 800px;
 }
 
+.container-chris:hover .chris-img, .container-chris:hover .chris-text {
+  transform: scale(1.05);
+  cursor: pointer;
+  width: 750px;
+}
+
 .container-mollie {
+  width: 1071px;
+  height: 216px;
+  text-decoration: none;
+}
+.container-mollie .mollie-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1071px;
   height: 216px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
 }
 .container-mollie .mollie-img {
-  max-width: 186px;
+  max-width: 168px;
   max-height: 216px;
+}
+.container-mollie .mollie-text {
+  width: 860px;
+}
+
+.container-mollie:hover .mollie-img, .container-mollie:hover .mollie-text {
+  transform: scale(1.05);
+  cursor: pointer;
+  width: 840px;
 }/*# sourceMappingURL=about.css.map */

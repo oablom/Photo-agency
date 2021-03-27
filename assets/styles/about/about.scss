@@ -10,17 +10,27 @@ main {
  font-size: 16px;
  text-align: center;
  font-family: 'Open Sans', sans-serif;
- color: white;
  line-height: 22px;
 }
 
-
+// alex
     .container-alex {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 1071px;
         height: 216px;
+
+        .alex-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1071px;
+            height: 216px;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+        }
 
         .alex-img {
             max-width: 186px;
@@ -30,37 +40,60 @@ main {
         .alex-text {
             width: 860px;
         }
-        
     }
+    .container-alex:hover .alex-img, .container-alex:hover .alex-text {  transform: scale(1.05);
+        cursor:pointer; }
 
+// chris
     .container-chris {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: 1071px;
         height: 216px;
 
+        .chris-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1071px;
+            height: 216px;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+        }
         .chris-img {
-            width: 255px;
+            max-width: 255px;
             height: 216px;
         }
-
         .chris-text {
             width: 800px;
         }
-        
     }
-
+    .container-chris:hover .chris-img, .container-chris:hover .chris-text {  transform: scale(1.05);
+        cursor:pointer; width: 750px;}
+// mollie
     .container-mollie {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: 1071px;
         height: 216px;
-
-        .mollie-img {
-            max-width: 186px;
-            max-height: 216px;
-        }
+        text-decoration: none;
         
+        .mollie-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1071px;
+            height: 216px;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+        }
+            .mollie-img {
+                max-width: 168px;
+                max-height: 216px;
+            }
+
+            .mollie-text {
+                width: 860px;
+            }
     }
+
+    .container-mollie:hover .mollie-img, .container-mollie:hover .mollie-text {  transform: scale(1.05);
+    cursor:pointer; width: 840px}
