@@ -26,6 +26,20 @@
   font-size: 1.8rem;
 }
 
+.heading__h5 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.heading__h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
 .paragraph {
   font-family: "Open Sans Condensed", sans-serif;
   color: #fff;
@@ -59,6 +73,20 @@
   color: #fff;
   font-weight: 300;
   font-size: 1.8rem;
+}
+
+.heading__h5 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.heading__h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 .paragraph {
@@ -242,6 +270,20 @@ body {
   font-size: 1.8rem;
 }
 
+.heading__h5 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.heading__h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
 .paragraph {
   font-family: "Open Sans Condensed", sans-serif;
   color: #fff;
@@ -251,14 +293,202 @@ body {
 
 .footer {
   width: 100%;
+  margin: auto;
   height: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+.footer__address {
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.25rem;
+}
+.footer__address--text {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-size: 1rem;
 }
 .footer__box {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  margin: auto;
+  width: 90%;
+  height: auto;
+}
+.footer__social {
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+.footer__social--list {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__social--items a {
+  color: #fff;
+  font-size: 1rem;
+}
+.footer__social--icons {
+  color: #fff;
+}
+
+.fab:hover {
+  color: #00bcd4;
+  transform: scale(1.3);
+  transition: 0.2s ease-in-out;
+}
+
+.copy {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.copy__text {
+  color: #fff;
+}
+.copy__attribute a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 400px) {
+  .footer__social--list {
+    max-width: 40rem;
+  }
+}
+.wrapper {
+  display: flex;
+  width: 90%;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.wrapper__lenses2 {
+  background: url("../../images/landing-img/lens-2.png") no-repeat center;
+  background-size: cover;
+  opacity: 0.1;
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  top: -40%;
+  left: -20%;
+}
+.wrapper__lenses3 {
+  background: url("../../images/landing-img/lens-3.png") no-repeat center;
+  background-size: cover;
+  opacity: 0.1;
+  width: 100vw;
+  height: 70vh;
+  position: absolute;
+  bottom: -14%;
+  right: -12%;
+}
+
+.main__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.main__title--h1 {
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 3.4rem;
+}
+
+.h1 {
+  position: relative;
+  width: 30rem;
+  margin: auto;
+}
+.h1__underline {
+  width: 12rem;
+  height: 0.2rem;
+  background-color: #fff;
+  position: absolute;
+  top: 6.12rem;
+  left: 3.2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    width: 70vw;
+    height: 80vh;
+  }
+
+  .main__title--h1 {
+    font-size: 4rem;
+  }
+  .main paragraph--h5 {
+    font-size: 2.2rem;
+  }
+
+  .h1__underline {
+    width: 16rem;
+    height: 0.3rem;
+    top: 7.3rem;
+    left: 0;
+  }
+}
+@media screen and (min-width: 780px) {
+  .main__title--h1 {
+    font-size: 6rem;
+  }
+
+  .h1__underline {
+    width: 18rem;
+    height: 0.3rem;
+    top: 11rem;
+    left: -2rem;
+  }
+}
+@media screen and (min-width: 1160px) {
+  .wrapper__lenses2 {
+    width: 60vw;
+    height: 80vh;
+    top: -20%;
+    left: -10%;
+  }
+  .wrapper__lenses3 {
+    width: 70vw;
+    height: 70vh;
+    bottom: -12%;
+    right: -12%;
+  }
+
+  .main__title--h1 {
+    font-size: 8rem;
+  }
+  .main__paragraph--h5 {
+    width: 50rem;
+  }
+
+  .h1 {
+    width: 50rem;
+    align-self: flex-start;
+    margin: 0;
+  }
+  .h1__underline {
+    width: 26rem;
+    height: 0.38rem;
+    top: 15rem;
+    left: 0;
+  }
 }
 
 /*# sourceMappingURL=landing.css.map */
