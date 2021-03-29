@@ -317,6 +317,19 @@ main {
   width: 840px;
 }
 
+.line {
+  display: none;
+}
+
+@media (max-width: 509px) {
+  .line {
+    transform: translateY(50px);
+  }
+
+  .container-mollie, .container-chris {
+    transform: translateY(50px);
+  }
+}
 @media (orientation: portrait) {
   .about-container {
     transform: translateY(50px);
@@ -335,15 +348,26 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 666px;
     width: 100%;
     height: 398px;
+    margin-bottom: 50PX;
   }
   .container-mollie .chris-link, .container-alex .chris-link, .container-chris .chris-link {
     flex-direction: column-reverse;
   }
   .container-mollie .mollie-text, .container-mollie .alex-text, .container-mollie .chris-text, .container-alex .mollie-text, .container-alex .alex-text, .container-alex .chris-text, .container-chris .mollie-text, .container-chris .alex-text, .container-chris .chris-text {
     height: 100px;
+  }
+
+  .line {
+    display: block;
+    max-width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .line {
+    display: none;
   }
 }/*# sourceMappingURL=about.css.map */
