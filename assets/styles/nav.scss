@@ -15,6 +15,7 @@
 body {
   box-sizing: border-box;
   background: $black-bg;
+  overflow: hidden;
 }
 
 .header {
@@ -150,5 +151,17 @@ body {
 
   .nav__item a {
     text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .heading__h3 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 1390px) {
+  .header .heading__h3 {
+    font-size: 3.4rem;
   }
 }

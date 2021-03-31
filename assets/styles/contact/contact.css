@@ -91,9 +91,9 @@ body {
   padding: 1em;
   border-radius: 1rem;
   -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
+  animation-duration: 1.2s;
   -webkit-animation-name: bounceIn;
-          animation-name: bounceIn;
+  animation-name: bounceIn;
 }
 
 .active {
@@ -197,7 +197,7 @@ body {
     list-style-type: none;
     background-color: transparent;
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 
   .nav__item + .nav__item {
@@ -210,9 +210,6 @@ body {
   }
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Open Sans Condensed", sans-serif;
   color: #b2b2b2;
 }
@@ -328,14 +325,21 @@ body {
 }
 
 .contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span .contactForm .inputBox textarea:focus ~ span,
+.contactForm
+  .inputBox
+  input:valid
+  ~ span
+  .contactForm
+  .inputBox
+  textarea:focus
+  ~ span,
 .contactForm .inputBox textarea:valid ~ span {
   color: #e91e63;
   font-size: 12px;
   transform: translateY(-20px);
 }
 
-.contactForm .inputBox input[type=Submit] {
+.contactForm .inputBox input[type="Submit"] {
   width: 100px;
   background: #00bcd4;
   color: #fff;
@@ -359,7 +363,7 @@ body {
   }
 
   .container .contactInfo,
-.contactForm {
+  .contactForm {
     width: 100%;
   }
-}/*# sourceMappingURL=contact.css.map */
+} /*# sourceMappingURL=contact.css.map */
