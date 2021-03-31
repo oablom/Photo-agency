@@ -87,13 +87,11 @@ body {
   position: absolute;
   top: 12%;
   right: 6%;
-  background-color: rgba(47, 44, 44, 0.4);
+  background-color: rgba(47, 44, 44, 0.8);
   padding: 1em;
   border-radius: 1rem;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-  -webkit-animation-name: bounceIn;
-          animation-name: bounceIn;
+  animation-duration: 1.2s;
+  animation-name: bounceIn;
 }
 
 .active {
@@ -108,6 +106,8 @@ body {
 
 .nav__item {
   padding: 0.5em;
+  border-top: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
 }
 
 .nav__item + .nav__item {
@@ -139,19 +139,6 @@ body {
 }
 
 /* Animation */
-@-webkit-keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes bounceIn {
   0% {
     transform: scale(0.1);
@@ -196,8 +183,7 @@ body {
     justify-content: flex-end;
     list-style-type: none;
     background-color: transparent;
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 
   .nav__item + .nav__item {
@@ -208,4 +194,6 @@ body {
   .nav__item a {
     text-decoration: none;
   }
-}/*# sourceMappingURL=nav.css.map */
+}
+
+/*# sourceMappingURL=nav.css.map */

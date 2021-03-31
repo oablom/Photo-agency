@@ -1,8 +1,6 @@
 @import "../color";
 @import "../font";
 @import "../mixin";
-@import "../nav";
-@import "../footer";
 
 .wrapper {
   display: flex;
@@ -144,5 +142,9 @@
       top: 15rem;
       left: 0;
     }
+  }
+
+  .heading__h3 {
+    font-size: 2.5rem;
   }
 }
