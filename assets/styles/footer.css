@@ -98,7 +98,11 @@
 
 .fab:hover {
   color: #00bcd4;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
   transform: scale(1.3);
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -123,4 +127,14 @@
   .footer__social--list {
     max-width: 40rem;
   }
-}/*# sourceMappingURL=footer.css.map */
+}
+@media screen and (min-width: 800px) {
+  .footer__address--text {
+    font-size: 1.2rem;
+  }
+  .footersocial__items a {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
