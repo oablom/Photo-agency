@@ -5,17 +5,28 @@
 main {
     display: flex;
     justify-content: center;
+     color: rgba($color: #FFFFFF, $alpha: 0.45);
+     min-height: 100%;
 }
 
 .about-container {
 transform: translateY(50px);
+margin-bottom: 50px;
  max-width: 1027px;
  width: 100%;
+ min-height: 100%;
  font-size: 16px;
  text-align: center;
  font-family: 'Open Sans', sans-serif;
  line-height: 22px;
 }
+
+    .info {
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px; 
+        }
+    }
 
 // alex
     .container-alex {
@@ -41,7 +52,7 @@ transform: translateY(50px);
         }
 
         .alex-text {
-            max-width: 800px;
+            max-width: 820px;
             width: 100%;
         }
     }
@@ -70,7 +81,7 @@ transform: translateY(50px);
             height: 216px;
         }
         .chris-text {
-            max-width: 800px;
+            max-width: 740px;
             width: 100%;
         }
     }
@@ -99,7 +110,7 @@ transform: translateY(50px);
             }
 
             .mollie-text {
-                max-width: 860px;
+                max-width: 820px;
                 width: 100%;
             }
     }
@@ -112,6 +123,9 @@ transform: translateY(50px);
     }
 
 @media (max-width: 509px) {
+  main {
+      margin-bottom: 20px;
+  }
     .line {
         transform: translateY(50px);
     }
@@ -125,9 +139,9 @@ transform: translateY(50px);
 @media (orientation: portrait) {
     .about-container {
         transform: translateY(50px);
-         display: flex;
-         flex-direction: column;
-         align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         }
 
         .container-mollie, .container-alex, .container-chris {
@@ -166,6 +180,6 @@ transform: translateY(50px);
     }
 }
 
-@media (hover: none) {
 
-}
+
+

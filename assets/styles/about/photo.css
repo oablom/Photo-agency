@@ -211,157 +211,103 @@ body {
     text-decoration: none;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans Condensed", sans-serif;
-  color: #b2b2b2;
-}
-
-.contact {
-  position: relative;
-  min-height: 100vh;
-  padding: 50px;
+main {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  background: url(../images/background.jpg);
-  background-size: cover;
+  align-items: center;
+  margin-bottom: 50px;
+  min-height: 100%;
 }
 
-.contact .content {
-  max-width: 800px;
+.spacediv {
+  height: 100px;
+  width: 100%;
+  display: block;
+}
+
+.photo-container {
+  transform: translateY(50px);
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1203px;
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 567px;
+  font-size: 16px;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 22px;
+  color: white;
 }
 
-.contact .content h2 {
-  font-size: 36px;
-  font-weight: 500;
-}
-
-.contact .content p {
-  font-weight: 300;
-}
-
-.container {
+.left {
+  max-width: 720px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.container .contactInfo {
-  width: 50%;
+  height: 467px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-
-.container .contactInfo .box {
-  position: relative;
-  padding: 20px 0;
+.left .photos {
+  max-height: 253px;
   display: flex;
+  justify-content: space-between;
 }
-
-.container .contactInfo .box .icon {
-  min-width: 60px;
-  height: 60px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  font-size: 22px;
+.left .photos .photos-sub img {
+  max-width: 253px;
+  max-height: 253px;
 }
-
-.container .contactInfo .box .text {
+.left .text {
+  height: 156px;
+  max-width: 720px;
+  width: 100%;
   display: flex;
-  margin-left: 20px;
-  font-size: 16px;
   flex-direction: column;
-  font-weight: 300;
+  justify-content: space-between;
+}
+.left .text p {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
-.container .contactInfo .box .text h3 {
-  font-weight: 500;
-  color: #00bcd4;
+.right {
+  padding-left: 20px;
+  max-width: 100%;
+  height: 489px;
 }
 
-.contactForm {
-  width: 40%;
-  padding: 40px;
-  background: #fff;
-}
-
-.contactForm h2 {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.contactForm .inputBox {
-  position: relative;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
-  width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  border: none;
-  border-bottom: 2px solid #333;
-  outline: none;
-  resize: none;
-}
-
-.contactForm .inputBox span {
-  position: absolute;
-  left: 0;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  pointer-events: none;
-  transition: 0.5s;
-  color: #666;
-}
-
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span .contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
-  color: #e91e63;
-  font-size: 12px;
-  transform: translateY(-20px);
-}
-
-.contactForm .inputBox input[type=Submit] {
-  width: 100px;
-  background: #00bcd4;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
-}
-
-@media (max-width: 991px) {
-  .contact {
-    padding: 50px;
+@media (max-width: 500px) {
+  .left {
+    height: 1000px;
   }
-
-  .container {
+  .left .photos {
+    max-height: 1000px;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
   }
 
-  .container .contactInfo {
-    margin-bottom: 40px;
+  .right {
+    padding-left: 0px;
   }
 
-  .container .contactInfo,
-.contactForm {
-    width: 100%;
+  .photo-container {
+    transform: translateY(-50px);
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    min-height: 1520px;
   }
-}/*# sourceMappingURL=contact.css.map */
+}
+@media (orientation: portrait) {
+  .photo-container {
+    transform: translateY(-50px);
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    height: 1020px;
+  }
+}/*# sourceMappingURL=photo.css.map */

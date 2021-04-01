@@ -1,0 +1,116 @@
+@import "../nav";
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    min-height: 100%;
+  
+}
+
+.spacediv {
+    
+    height: 100px;
+    width: 100%;
+    display: block;
+}
+    .photo-container {
+        transform: translateY(50px);
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1203px;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 567px;
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 22px;
+        color: white;
+    }
+
+    .left {
+        max-width: 720px;
+        width: 100%;
+        height: 467px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+        .photos {
+            max-height: 253px;
+            display: flex;
+            justify-content: space-between;
+
+            .photos-sub {
+                img {
+                max-width: 253px;
+                max-height: 253px;
+            }}
+        }
+
+
+        .text {
+                height: 156px;
+                max-width: 720px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+            p {
+                margin-bottom: 0px;
+                margin-top: 0px;
+                }
+            }
+        }
+
+    .right {
+        padding-left: 20px;
+        max-width: 100%;
+        height: 489px;
+
+    }
+
+@media (max-width: 500px) {
+    .left {
+        height: 1000px;
+
+    .photos {
+        max-height: 1000px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+.right {
+    padding-left: 0px;
+}
+
+
+.photo-container {
+    transform: translateY(-50px);
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    min-height: 1520px;
+  
+}}
+
+@media (orientation: portrait) {
+
+    .photo-container {
+        transform: translateY(-50px);
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        height: 1020px;
+      
+    }
+}
