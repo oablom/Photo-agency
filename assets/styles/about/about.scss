@@ -1,6 +1,10 @@
 @import "../nav";
 
-
+body {
+    background-image: url(../../images/about-img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 main {
     display: flex;

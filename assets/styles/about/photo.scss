@@ -1,5 +1,11 @@
 @import "../nav";
 
+body {
+    background-image: url(../../images/about-img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -74,10 +80,11 @@ main {
         padding-left: 20px;
         max-width: 100%;
         height: 489px;
+        
 
     }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .left {
         height: 1000px;
 
@@ -91,6 +98,7 @@ main {
 
 .right {
     padding-left: 0px;
+    max-height: 80%;
 }
 
 
@@ -103,7 +111,7 @@ main {
   
 }}
 
-@media (orientation: portrait) {
+@media (orientation: portrait), (max-width: 1050px) {
 
     .photo-container {
         transform: translateY(-50px);
@@ -114,3 +122,5 @@ main {
       
     }
 }
+
+
