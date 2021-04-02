@@ -19,30 +19,30 @@ body {
 }
 
 .header {
-  position: relative;
   display: flex;
   width: 90%;
   margin: auto;
   margin-top: 2rem;
   padding: 2em;
-
-  &__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4rem;
-    height: 4rem;
-  }
 }
 
 .logo,
 .heading__h3 {
+  position: relative;
   width: 15rem;
 
   &__link {
     text-decoration: none;
     color: $text-white;
     cursor: pointer;
+  }
+
+  &__img {
+    position: absolute;
+    top: -5px;
+    left: -30px;
+    width: 4rem;
+    height: 4rem;
   }
 }
 

@@ -64,23 +64,16 @@ body {
 }
 
 .header {
-  position: relative;
   display: flex;
   width: 90%;
   margin: auto;
   margin-top: 2rem;
   padding: 2em;
 }
-.header__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4rem;
-  height: 4rem;
-}
 
 .logo,
 .heading__h3 {
+  position: relative;
   width: 15rem;
 }
 .logo__link,
@@ -88,6 +81,14 @@ body {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+}
+.logo__img,
+.heading__h3__img {
+  position: absolute;
+  top: -5px;
+  left: -30px;
+  width: 4rem;
+  height: 4rem;
 }
 
 .nav {
