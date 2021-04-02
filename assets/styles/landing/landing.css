@@ -162,6 +162,7 @@ body {
 
 .active {
   display: block;
+  z-index: 999;
 }
 
 .nav__links {
@@ -421,29 +422,29 @@ body {
   display: flex;
   width: 90%;
   height: 70vh;
-  justify-content: center;
-  align-items: center;
   margin: auto;
 }
 .wrapper__lenses2 {
   background: url("../../images/landing-img/lens-2.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
   opacity: 0.1;
   width: 100vw;
   height: 80vh;
   position: absolute;
   top: -40%;
   left: -20%;
+  overflow: hidden;
 }
 .wrapper__lenses3 {
   background: url("../../images/landing-img/lens-3.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
   opacity: 0.1;
   width: 100vw;
   height: 70vh;
   position: absolute;
   bottom: -14%;
   right: -12%;
+  overflow: hidden;
 }
 
 .main__title {
@@ -483,7 +484,7 @@ body {
   .main__title--h1 {
     font-size: 4rem;
   }
-  .main paragraph--h5 {
+  .main__paragraph--h5 {
     font-size: 2.2rem;
   }
 
@@ -524,7 +525,8 @@ body {
     font-size: 8rem;
   }
   .main__paragraph--h5 {
-    width: 50rem;
+    width: 60rem;
+    font-size: 2.6rem;
   }
 
   .h1 {
