@@ -88,7 +88,7 @@
       font-size: 1.2rem;
     }
 
-    &__social__items a {
+    &__social--icon {
       font-size: 1.2rem;
     }
   }
@@ -97,11 +97,11 @@
 @media screen and (min-width: 1200px) {
   .footer {
     &__address--text {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
 
-    &__social__items a {
-      font-size: 1.6rem;
+    &__social--icon {
+      font-size: 1.8rem;
     }
   }
 }
