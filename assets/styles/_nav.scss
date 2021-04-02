@@ -70,6 +70,7 @@ body {
 
 .active {
   display: block;
+  z-index: 999;
 }
 
 .nav__links {
