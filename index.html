@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+div<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,6 +31,7 @@
     />
     <!-- css stylesheets -->
     <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/nav.css" />
     <link rel="stylesheet" href="assets/styles/footer.css" />
     <link rel="stylesheet" href="assets/styles/landing/landing.css" />
     <!-- Favicon in title tab -->
@@ -39,7 +40,16 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo heading__h3">Photo Agency</div>
+      <div class="logo heading__h3">
+        <div>
+          <svg class="logo__img">
+            <use
+              xlink:href="assets/images/landing-img/lens-small.svg#lens"
+            ></use>
+          </svg>
+        </div>
+        <a class="logo__link" href="#">Photo Agency</a>
+      </div>
       <!-- Nav toggler -->
       <div class="menu-toggle" id="jsNavbarToggle">
         <div class="one"></div>

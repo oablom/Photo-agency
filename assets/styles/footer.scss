@@ -81,3 +81,15 @@
     max-width: 40rem;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .footer {
+    &__address--text {
+      font-size: 1.2rem;
+    }
+
+    &social__items a {
+      font-size: 1.2rem;
+    }
+  }
+}

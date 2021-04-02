@@ -60,6 +60,7 @@
 body {
   box-sizing: border-box;
   background: #0b0a0a;
+  overflow: hidden;
 }
 
 .header {
@@ -70,8 +71,24 @@ body {
   padding: 2em;
 }
 
-.logo {
+.logo,
+.heading__h3 {
+  position: relative;
   width: 15rem;
+}
+.logo__link,
+.heading__h3__link {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.logo__img,
+.heading__h3__img {
+  position: absolute;
+  top: -5px;
+  left: -30px;
+  width: 4rem;
+  height: 4rem;
 }
 
 .nav {
@@ -90,10 +107,8 @@ body {
   background-color: rgba(47, 44, 44, 0.8);
   padding: 1em;
   border-radius: 1rem;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-  -webkit-animation-name: bounceIn;
-          animation-name: bounceIn;
+  animation-duration: 1.2s;
+  animation-name: bounceIn;
 }
 
 .active {
@@ -141,19 +156,6 @@ body {
 }
 
 /* Animation */
-@-webkit-keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes bounceIn {
   0% {
     transform: scale(0.1);
@@ -183,7 +185,7 @@ body {
     padding: 0.8em;
   }
 
-  .logo {
+  .logo .heading__h3 {
     font-size: 2.5rem;
   }
 
@@ -198,8 +200,7 @@ body {
     justify-content: flex-end;
     list-style-type: none;
     background-color: transparent;
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 
   .nav__item + .nav__item {
@@ -210,4 +211,16 @@ body {
   .nav__item a {
     text-decoration: none;
   }
-}/*# sourceMappingURL=nav.css.map */
+}
+@media screen and (min-width: 1200px) {
+  .header .heading__h3 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 1390px) {
+  .header .heading__h3 {
+    font-size: 3.4rem;
+  }
+}
+
+/*# sourceMappingURL=nav.css.map */
