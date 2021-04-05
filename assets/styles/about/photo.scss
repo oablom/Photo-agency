@@ -1,3 +1,4 @@
+@import "../mixin";
 @import "../nav";
 @import "../footer";
 
@@ -12,81 +13,90 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   min-height: 100%;
 }
 
 .spacediv {
-  height: 100px;
+  height: 10rem;
   width: 100%;
   display: block;
 }
 .photo-container {
   transform: translateY(50px);
-  flex-direction: row;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1203px;
-  width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 567px;
-  font-size: 16px;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  line-height: 22px;
-  color: white;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        max-width: 120.3rem;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 56.7rem;
+        font-size: 1.6rem;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 2.2rem;
+        color: white;
 }
 
 .left {
-  max-width: 720px;
-  width: 100%;
-  height: 467px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  max-width: 72rem;
+        width: 100%;
+        height: 46.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
   .photos {
-    max-height: 253px;
+    max-height: 25.3rem;
     display: flex;
     justify-content: space-between;
 
-    .photos-sub {
-      img {
-        max-width: 253px;
-        max-height: 253px;
-      }
-    }
+    .photos-sub-alex {
+                img {
+                max-width: 25.3rem;
+                max-height: 25.3rem;
+                }}
+            .photos-sub-chris {
+                img {
+                max-width: 20.3rem;
+                max-height: 20.3rem;
+                }}
+            .photos-sub-mollie {
+                img {
+                max-width: 20.3rem;
+                max-height: 20.3rem;
+            }}
   }
 
   .text {
-    height: 156px;
-    max-width: 720px;
+    height: 15.6rem;
+    max-width: 72rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     p {
-      margin-bottom: 0px;
-      margin-top: 0px;
+      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 }
 
 .right {
-  padding-left: 20px;
+  padding-left: 2rem;
   max-width: 100%;
-  height: 489px;
+  height: 48.9rem;
   z-index: 1;
 }
 
 @media (max-width: 700px) {
   .left {
-    height: 1000px;
+    height: 100rem;
 
     .photos {
-      max-height: 1000px;
+      max-height: 100rem;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -94,25 +104,25 @@ main {
   }
 
   .right {
-    padding-left: 0px;
+    padding-left: 0;
     max-height: 80%;
   }
 
   .photo-container {
-    transform: translateY(-50px);
+    transform: translateY(-5rem);
     flex-direction: column-reverse;
     display: flex;
     align-items: center;
-    min-height: 1520px;
+    min-height: 152rem;
   }
 }
 
 @media (orientation: portrait), (max-width: 1050px) {
   .photo-container {
-    transform: translateY(-50px);
+    transform: translateY(-5rem);
     flex-direction: column-reverse;
     display: flex;
     align-items: center;
-    height: 1020px;
+    height: 102rem;
   }
 }
