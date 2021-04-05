@@ -58,9 +58,9 @@
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   background: #0b0a0a;
-  overflow: hidden;
 }
 
 .header {
@@ -113,6 +113,7 @@ body {
 
 .active {
   display: block;
+  z-index: 999;
 }
 
 .nav__links {
@@ -356,16 +357,16 @@ body {
   .footer__address--text {
     font-size: 1.2rem;
   }
-  .footer__social__items a {
+  .footer__social--icon {
     font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__address--text {
-    font-size: 1.4rem;
-  }
-  .footer__social__items a {
     font-size: 1.6rem;
+  }
+  .footer__social--icon {
+    font-size: 1.8rem;
   }
 }
 body {
@@ -440,6 +441,7 @@ main {
   padding-left: 20px;
   max-width: 100%;
   height: 489px;
+  z-index: 1;
 }
 
 @media (max-width: 700px) {

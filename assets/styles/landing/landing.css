@@ -107,9 +107,9 @@
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   background: #0b0a0a;
-  overflow: hidden;
 }
 
 .header {
@@ -406,16 +406,16 @@ body {
   .footer__address--text {
     font-size: 1.2rem;
   }
-  .footer__social__items a {
+  .footer__social--icon {
     font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__address--text {
-    font-size: 1.4rem;
-  }
-  .footer__social__items a {
     font-size: 1.6rem;
+  }
+  .footer__social--icon {
+    font-size: 1.8rem;
   }
 }
 .wrapper {
