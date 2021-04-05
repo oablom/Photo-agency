@@ -3,34 +3,34 @@
 @import "../footer";
 
 body {
-    background-image: url(../../images/about-img/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(../../images/about-img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main {
   display: flex;
   justify-content: center;
-  color: rgba($color: #FFFFFF, $alpha: 0.45);
-  min-height: 100%;
+  color: rgba($color: #ffffff, $alpha: 0.45);
+  min-height: 75vh;
 }
 
 .about-container {
   transform: translateY(5rem);
   margin-bottom: 5rem;
- max-width: 102.7rem;
- width: 100%;
- min-height: 100%;
- font-size: 1.6rem;
- text-align: center;
- font-family: 'Open Sans', sans-serif;
- line-height: 2.2rem;
+  max-width: 102.7rem;
+  width: 100%;
+  min-height: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.2rem;
 }
 
 .info {
   p {
     margin-top: 0;
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
 }
 
@@ -42,19 +42,19 @@ main {
 
   .alex-link {
     display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 107.1rem;
-            width: 100%;
-            height: 21.6rem;
-            text-decoration: none;
-            color: white;
-            position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 107.1rem;
+    width: 100%;
+    height: 21.6rem;
+    text-decoration: none;
+    color: white;
+    position: absolute;
   }
 
   .alex-img {
     max-width: 16.9rem;
-            max-height: 21.6rem;
+    max-height: 21.6rem;
   }
 
   .alex-text {
@@ -72,23 +72,23 @@ main {
 // chris
 .container-chris {
   max-width: 107.1rem;
-        width: 100%;
-        height: 21.6rem;
+  width: 100%;
+  height: 21.6rem;
 
   .chris-link {
     display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 107.1rem;
-            width: 100%;
-            height: 21.6rem;
-            text-decoration: none;
-            color: white;
-            position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 107.1rem;
+    width: 100%;
+    height: 21.6rem;
+    text-decoration: none;
+    color: white;
+    position: absolute;
   }
   .chris-img {
     max-width: 20rem;
-            height: 21.6rem;
+    height: 21.6rem;
   }
   .chris-text {
     max-width: 80rem;
@@ -104,19 +104,19 @@ main {
 // mollie
 .container-mollie {
   max-width: 107.1rem;
-        width: 100%;
-        height: 21.6rem;
+  width: 100%;
+  height: 21.6rem;
 
   .mollie-link {
     display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 107.1rem;
-            width: 100%;
-            height: 21.6rem;
-            text-decoration: none;
-            color: white;
-            position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 107.1rem;
+    width: 100%;
+    height: 21.6rem;
+    text-decoration: none;
+    color: white;
+    position: absolute;
   }
   .mollie-img {
     max-width: 16.8rem;
@@ -142,31 +142,32 @@ main {
 
 @media (max-width: 509px) {
   main {
-      margin-bottom: 2rem;
+    margin-bottom: 2rem;
   }
-    .line {
-        transform: translateY(5rem);
-    }
-    .container-mollie, .container-chris {
-        transform: translateY(5rem);
-    }
+  .line {
+    transform: translateY(5rem);
+  }
+  .container-mollie,
+  .container-chris {
+    transform: translateY(5rem);
+  }
 }
 
 @media (orientation: portrait) {
   .about-container {
     transform: translateY(5rem);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .container-mollie,
   .container-alex,
   .container-chris {
-     max-width: 66.6rem;
-            width: 100%;
-            height: 39.8rem;
-            margin-bottom: 10rem;
+    max-width: 66.6rem;
+    width: 100%;
+    height: 39.8rem;
+    margin-bottom: 10rem;
 
     .mollie-link,
     .alex-link,
@@ -176,9 +177,9 @@ main {
       align-items: center;
       justify-content: space-around;
       max-width: 66.6rem;
-                width: 100%;
-                height: 39.8rem;
-                margin-bottom: 5rem;
+      width: 100%;
+      height: 39.8rem;
+      margin-bottom: 5rem;
     }
 
     .chris-link {

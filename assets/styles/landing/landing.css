@@ -570,7 +570,8 @@ body {
   }
   .main__paragraph--h5 {
     width: 60rem;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+    margin-top: 0;
   }
 
   .h1 {
@@ -587,6 +588,12 @@ body {
 
   .heading__h3 {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main__paragraph--h5 {
+    width: 70rem;
+    font-size: 3rem;
   }
 }
 
